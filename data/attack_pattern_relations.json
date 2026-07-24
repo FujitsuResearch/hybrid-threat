@@ -1,0 +1,1329 @@
+{
+  "type": "bundle",
+  "id": "bundle--bf3194a2-8a73-564c-9b0a-03760b703e4e",
+  "objects": [
+    {
+      "type": "x-role-category",
+      "spec_version": "2.1",
+      "id": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Conditioning",
+      "description": "Activities that fulfill the necessary conditions for a subsequent activity. The successor activity does not occur (or is significantly impeded) without the predecessor.",
+      "external_references": [
+        {
+          "source_name": "giannopoulos2021landscape",
+          "description": "Giannopoulos, G., Smith, H., Theocharidou, M. (eds.) (2021). The Landscape of Hybrid Threats. JRC123305. | Hybrid CoE: cluster V (後続活動の成立要件充足) — preconditioning, shaping, priming, build leverage, creating dependency.",
+          "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC123305"
+        }
+      ],
+      "x_role_shortname": "conditioning"
+    },
+    {
+      "type": "x-role-category",
+      "spec_version": "2.1",
+      "id": "x-role-category--3f7b2c45-d901-4a8e-9c6d-5e8b1f2a7d3c",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Amplification",
+      "description": "Activities whose existence or execution increases the magnitude of effect (reach, intensity, efficiency, or persistence) of another activity. The other activity would still occur without them, at a smaller scale.",
+      "external_references": [
+        {
+          "source_name": "giannopoulos2021landscape",
+          "description": "Giannopoulos, G., Smith, H., Theocharidou, M. (eds.) (2021). The Landscape of Hybrid Threats. JRC123305. | Hybrid CoE: cluster IV (活動効果の量的増大) — force multiplier, intensifies, synergistic effects.",
+          "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC123305"
+        }
+      ],
+      "x_role_shortname": "amplification"
+    },
+    {
+      "type": "x-role-category",
+      "spec_version": "2.1",
+      "id": "x-role-category--6e1a8b94-2c5f-4d3a-b7e8-9f0c4a2b6d5e",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Redirection",
+      "description": "Functional separation between the direct object of an activity (X) and the object to which its effect propagates (Y). Propagation may be direct (one-step) or cascading (multi-step).",
+      "external_references": [
+        {
+          "source_name": "giannopoulos2021landscape",
+          "description": "Giannopoulos, G., Smith, H., Theocharidou, M. (eds.) (2021). The Landscape of Hybrid Threats. JRC123305. | Hybrid CoE: cluster VI (直接対象と効果波及先の分離) — planned second-order effect, cascade effects, distraction element.",
+          "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC123305"
+        }
+      ],
+      "x_role_shortname": "redirection"
+    },
+    {
+      "type": "x-role-category",
+      "spec_version": "2.1",
+      "id": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Obfuscation",
+      "description": "Activities that reduce the traceability of detection, attribution, or intent of another activity, by means of concealment, deniability, or misdirection.",
+      "external_references": [
+        {
+          "source_name": "giannopoulos2021landscape",
+          "description": "Giannopoulos, G., Smith, H., Theocharidou, M. (eds.) (2021). The Landscape of Hybrid Threats. JRC123305. | Hybrid CoE: cluster I (検知・帰属・意図の困難化) — plausible deniability, threshold manipulation, hiding the real intent, evading attribution.",
+          "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC123305"
+        }
+      ],
+      "x_role_shortname": "obfuscation"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--84f95f3f-fd1d-5c42-9ced-96a55234b6e1",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--a62a8db3-f23a-4d8f-afd6-9dbc77e7813b",
+      "target_ref": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+      "description": "Ghostwriter / UNC1151 context: spear-phishing supplies credentials or access material for later valid-account use.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--cb6133e9-c0a8-550b-8626-75c1b92795d8",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+      "target_ref": "attack-pattern--4d86424a-26a1-4d9f-bc32-619620a18a8d",
+      "description": "Ghostwriter / UNC1151 context: valid or compromised account use enables trusted-voice influence activity.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d8b033b7-d95f-5162-914d-50389b966550",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+      "target_ref": "attack-pattern--b4694861-542c-48ea-9eb1-10d356e7140a",
+      "description": "Star Blizzard / UK General Election 2019 context: spear-phishing attachment (T1566.001) supplies credential or session access that enables remote email collection (T1114.002) of stolen political documents.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3f629c10-b88d-50d6-a10b-2eaed6525ce2",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--b4694861-542c-48ea-9eb1-10d356e7140a",
+      "target_ref": "attack-pattern--ec8424e6-c7de-4543-b943-f0c4cc9ac63d",
+      "description": "Star Blizzard / UK General Election 2019 context: remote email collection (T1114.002) enables the actor to obtain authentic political documents (T0089.001) for later weaponization as influence material.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d3daa822-ab78-4626-b03e-7078fefa2abd",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--ec8424e6-c7de-4543-b943-f0c4cc9ac63d",
+      "target_ref": "attack-pattern--5d4cafe2-42cc-4c41-8ce7-41256e1383f7",
+      "description": "Star Blizzard / UK General Election 2019 context: obtaining authentic stolen political documents (T0089.001) enables baiting legitimate influencers and journalists (T0039) by sharing credible material.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--629ba3b9-31e5-4706-aa8f-dca076cdf1f0",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+      "target_ref": "attack-pattern--b4694861-542c-48ea-9eb1-10d356e7140a",
+      "description": "Macron Leaks context: APT28 spear-phishing of En Marche! staff (T1566.001) supplies the initial access needed for remote collection of campaign email communications (T1114.002).",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2fe537c5-0694-56b6-9fb4-99d9f51b01a4",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--b4694861-542c-48ea-9eb1-10d356e7140a",
+      "target_ref": "attack-pattern--40597f16-0963-4249-bf4c-ac93b7fb9807",
+      "description": "Macron Leaks context: remote collection of En Marche! email communications (T1114.002) enables exfiltration of the stolen material over web services (T1567).",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--81d345d1-d2b1-510a-928c-96fe37d65850",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--40597f16-0963-4249-bf4c-ac93b7fb9807",
+      "target_ref": "attack-pattern--d1ad0738-1f52-4fab-b0d1-640b551d7f6a",
+      "description": "Macron Leaks context: exfiltrated documents are released through inauthentic social media pages (T0007), supplying the stolen material as content for the leak-and-amplify operation.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--79eb1c2a-21c4-40e9-a059-8c2de5286f6a",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-amplification",
+      "source_ref": "attack-pattern--0cfe31a7-81fc-472c-bc45-e2808d1066a3",
+      "target_ref": "attack-pattern--9cf02828-bd4c-4b04-a9f0-bb67ec3b0493",
+      "description": "Sandworm × Brexit context: GRU defacement of Ukrainian critical infrastructure (T1491.002) was exploited by concurrent Russian-origin influence accounts to amplify anti-EU narratives targeting Brexit audiences (T0003). Causal link is inferred from temporal overlap and shared Russian state interest; a unified campaign document has not been made public.",
+      "x_role_category_ref": "x-role-category--3f7b2c45-d901-4a8e-9c6d-5e8b1f2a7d3c"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--216da87a-90a2-4863-894a-cda82823714e",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--9cf02828-bd4c-4b04-a9f0-bb67ec3b0493",
+      "target_ref": "attack-pattern--1c13465b-8b75-4b7d-a763-fe5b1d091635",
+      "description": "Sandworm × Brexit context: amplified anti-EU narratives (T0003 Leverage Existing Narratives) enabled coordinated troll account activity to further amplify and manipulate Brexit-period discourse (T0049.001 Trolls Amplify and Manipulate). Relationship is inferred from temporal concurrence and shared Russian state interest; confidence 40.",
+      "confidence": 40,
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--056ba8a4-8f3b-44a0-811c-bd3e94189a93",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--149b477f-f364-4824-b1b5-aa1d56115869",
+      "target_ref": "attack-pattern--c4213e65-a7cc-42a5-a3a7-2d8040258625",
+      "description": "Volt Typhoon × Taiwan Municipal Election 2022 context: KV Botnet compromise of SOHO network devices (T1584.008) created a pool of geographically distributed proxy nodes that could supply anonymized routing infrastructure for influence operation networks (T0092 Build Network). Temporal concurrence with the 2022 Taiwan Municipal Election is confirmed; causal relationship is speculative and no unified operation document has been published.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--582c15c8-07f3-4493-904d-29f0425145f0",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--c4213e65-a7cc-42a5-a3a7-2d8040258625",
+      "target_ref": "attack-pattern--d1ad0738-1f52-4fab-b0d1-640b551d7f6a",
+      "description": "Volt Typhoon × Taiwan Municipal Election 2022 context: an anonymized proxy network built from compromised SOHO nodes (T0092 Build Network) enables the operation of inauthentic social media pages and groups (T0007) by concealing their shared infrastructure origin. Relationship is speculative (confidence 35).",
+      "confidence": 35,
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--cce982e5-7fd1-4c8e-825e-c4c66135a5f8",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--810d8072-afb6-4a56-9ee7-86379ac4a6f3",
+      "target_ref": "attack-pattern--e6ab2793-a059-4354-bb60-045afb019833",
+      "description": "Volt Typhoon × Taiwan Presidential Election 2024 context: KV Botnet (T1584.005), consisting of hundreds of compromised SOHO devices, could supply forwarding nodes for coordinated bot amplification of influence narratives (T0049.003) during the January 2024 Taiwan Presidential Election. The botnet was disrupted on 2024-01-31, overlapping with the election on 2024-01-13. Causal link is speculative; no unified operation document has been published.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4cdb543e-55f2-495d-bf35-c76043974bcd",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--e6ab2793-a059-4354-bb60-045afb019833",
+      "target_ref": "attack-pattern--5d4cafe2-42cc-4c41-8ce7-41256e1383f7",
+      "description": "Volt Typhoon × Taiwan Presidential Election 2024 context: coordinated bot amplification (T0049.003 Bots Amplify via Automated Forwarding) creates the appearance of organic virality, enabling legitimate influencers and media to pick up and amplify AI-generated deepfake narratives (T0039 Bait Legitimate Influencers). Relationship is speculative (confidence 35).",
+      "confidence": 35,
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4388290f-2f21-589e-bc6e-f776ea46cd39",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-redirection",
+      "source_ref": "attack-pattern--3f886f2a-874f-4333-b794-aa6075009b1c",
+      "target_ref": "attack-pattern--228f4842-888c-460b-8bab-c01ed2af64cf",
+      "description": "Ghostwriter / UNC1151 context: CMS exploitation directly targets news-site IT infrastructure (T1190), but its effect propagates to news-site readership and erodes regional NATO support (T0135 Undermine).",
+      "x_role_category_ref": "x-role-category--6e1a8b94-2c5f-4d3a-b7e8-9f0c4a2b6d5e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8e5d542d-a91a-5623-be0e-8e9e38cb88e6",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-obfuscation",
+      "source_ref": "attack-pattern--4d86424a-26a1-4d9f-bc32-619620a18a8d",
+      "target_ref": "attack-pattern--09d17df9-9bb5-4d64-ba5c-8ae47814bd4c",
+      "description": "Ghostwriter / UNC1151 context: publishing through compromised legitimate news sites and officials' accounts (T0011) gives Ghostwriter narratives (T0019) plausible deniability — the channel owner denies posting and readers may treat the content as authentic.",
+      "x_role_category_ref": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9431343f-c1cd-5c37-8297-dc944532757f",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-obfuscation",
+      "source_ref": "attack-pattern--40f5caa0-4cb7-4117-89fc-d421bb493df3",
+      "target_ref": "attack-pattern--a62a8db3-f23a-4d8f-afd6-9dbc77e7813b",
+      "description": "Ghostwriter / UNC1151 context: spoofed-brand domains imitating Facebook/Google/regional media (T1583.001) give phishing emails (T1566) a trusted-brand façade and conceal the operation's origin from victims.",
+      "x_role_category_ref": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d7996c60-f635-51a3-8cfb-ffb821eaa4e3",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--90b7e29e-1b62-485e-88b0-a4052cabafa4",
+      "target_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+      "description": "Star Blizzard / UK General Election 2019 context: Star Blizzard's MO involves multi-week persona development (T0097) — building academic, journalist, or researcher identities engaging targets via social media — as the cognitive precondition for the eventual credential-theft spear-phishing (T1566.001). NCSC Dec 2023 advisory documents this persona-led targeting approach.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d8b76db5-1c5d-5e7d-9f1b-add7336e0e1b",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-redirection",
+      "source_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+      "target_ref": "attack-pattern--09d17df9-9bb5-4d64-ba5c-8ae47814bd4c",
+      "description": "Star Blizzard / UK General Election 2019 context: spear-phishing (T1566.001) directly targets a small set of political-staff inboxes, but its effect propagates through subsequent leak materials to UK public discourse (T0019).",
+      "x_role_category_ref": "x-role-category--6e1a8b94-2c5f-4d3a-b7e8-9f0c4a2b6d5e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5705cb3a-9b8c-5fe2-bca8-499adf014b18",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-obfuscation",
+      "source_ref": "attack-pattern--dd415f9d-ce3a-44c6-9237-f8ceeb52a6a3",
+      "target_ref": "attack-pattern--ec8424e6-c7de-4543-b943-f0c4cc9ac63d",
+      "description": "Star Blizzard context: actor uses front personas and deniable infrastructure to obscure FSB Centre 18 attribution of the document-obtention activity (T0089.001).",
+      "x_role_category_ref": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bb3d0143-7c00-5c08-a049-61a1e1d7c84b",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--ec8424e6-c7de-4543-b943-f0c4cc9ac63d",
+      "target_ref": "attack-pattern--3845d1f0-db88-41bb-95bf-8741ff9e72ea",
+      "description": "Macron Leaks context: tainted-leak technique (T0089.003) requires the authentic email archive (T0089.001) as base material into which fabricated documents (Vestiaire Gay, alleged offshore account) are inserted.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0290adee-ea6f-543d-ad50-21378b11b889",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--b2695cde-5f12-4e6a-b55a-e31220cb4bd7",
+      "target_ref": "attack-pattern--e6ab2793-a059-4354-bb60-045afb019833",
+      "description": "Macron Leaks context: pre-existing bot account inventory (T0090.003) — DFRLab identified overlap with 2016 US election interference accounts — is the precondition for the ~500,000 #MacronLeaks tweets within 24 hours produced via automated forwarding (T0049.003).",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6c2d18dd-82f8-598b-a653-4ac9aaa29360",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-amplification",
+      "source_ref": "attack-pattern--e6ab2793-a059-4354-bb60-045afb019833",
+      "target_ref": "attack-pattern--ec8424e6-c7de-4543-b943-f0c4cc9ac63d",
+      "description": "Macron Leaks context: bot-driven hashtag promotion (T0049.003) scales the visibility of the leaked content (T0089.001) far beyond organic sharing during the French campaign blackout period — ~500-fold within 24 hours.",
+      "x_role_category_ref": "x-role-category--3f7b2c45-d901-4a8e-9c6d-5e8b1f2a7d3c"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--36082e7e-5ac5-5d0d-88f0-8a9de186cb1a",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-redirection",
+      "source_ref": "attack-pattern--2e34237d-8574-43f6-aace-ae2915de8597",
+      "target_ref": "attack-pattern--09d17df9-9bb5-4d64-ba5c-8ae47814bd4c",
+      "description": "Macron Leaks context: spear-phishing (T1566.001) directly targets En Marche! staff inboxes, but its effect propagates to the French information environment (T0019) during the legally-imposed blackout when mainstream coverage was constrained.",
+      "x_role_category_ref": "x-role-category--6e1a8b94-2c5f-4d3a-b7e8-9f0c4a2b6d5e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--47fc8b58-606c-5d97-ad38-b4c9809450e3",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-obfuscation",
+      "source_ref": "attack-pattern--dd415f9d-ce3a-44c6-9237-f8ceeb52a6a3",
+      "target_ref": "attack-pattern--ec8424e6-c7de-4543-b943-f0c4cc9ac63d",
+      "description": "Macron Leaks context: dump metadata included Cyrillic script and the alias 'Georgy Petrovich Roshka', producing enough uncertainty that Trend Micro and others could not formally attribute the leak (T0089.001) to APT28 — obstructing firm state-attribution.",
+      "x_role_category_ref": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--ed855c35-997e-5b30-aafa-af01b6ac50e0",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-03T00:00:00.000Z",
+      "name": "Mandiant / Google Cloud Ghostwriter update",
+      "description": "Evidence source for the Ghostwriter / UNC1151 relationship chain. It supports credential harvesting, compromised account use, and influence activity. It should not be read as asserting that every Ghostwriter component is attributable to UNC1151.",
+      "published": "2026-06-03T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--84f95f3f-fd1d-5c42-9ced-96a55234b6e1",
+        "relationship--cb6133e9-c0a8-550b-8626-75c1b92795d8"
+      ],
+      "external_references": [
+        {
+          "source_name": "mandiant-google-cloud-2021",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/espionage-group-unc1151-likely-conducts-ghostwriter-influence-activity"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--2b69afa8-1981-5940-88f4-e3ee7ffdc514",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-03T00:00:00.000Z",
+      "name": "UK / NCSC Star Blizzard source",
+      "description": "Evidence source for the Star Blizzard relationship chain. It supports spear-phishing, document compromise, leak, and amplification. The material-transfer mechanism is represented directly as attack-pattern-to-attack-pattern relationships in this minimal overlay.",
+      "published": "2026-06-03T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--d8b033b7-d95f-5162-914d-50389b966550",
+        "relationship--3f629c10-b88d-50d6-a10b-2eaed6525ce2",
+        "relationship--d3daa822-ab78-4626-b03e-7078fefa2abd"
+      ],
+      "external_references": [
+        {
+          "source_name": "uk-ncsc-2023",
+          "url": "https://www.ncsc.gov.uk/news/uk-and-allies-expose-cyber-campaign-attempted-political-interference"
+        },
+        {
+          "source_name": "govuk-2023",
+          "url": "https://www.gov.uk/government/news/uk-exposes-attempted-russian-cyber-interference-in-politics-and-democratic-processes"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--9f4586ed-d714-5648-8c77-39780c2f7594",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-03T00:00:00.000Z",
+      "name": "Macron Leaks leak mechanics sources",
+      "description": "Evidence sources for the Macron Leaks relationship chain. They support Pastebin/4chan distribution, leak mechanics, and mixing of genuine and falsified documents.",
+      "published": "2026-06-03T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--629ba3b9-31e5-4706-aa8f-dca076cdf1f0",
+        "relationship--2fe537c5-0694-56b6-9fb4-99d9f51b01a4",
+        "relationship--81d345d1-d2b1-510a-928c-96fe37d65850"
+      ],
+      "external_references": [
+        {
+          "source_name": "france24-2017",
+          "url": "https://www.france24.com/en/20170508-french-media-blackout-bots-far-right-activists-wikileaks-pushed-macronleaks"
+        },
+        {
+          "source_name": "voa-reuters-2017",
+          "url": "https://www.voanews.com/a/emails-from-campaign-france-macron-stolen-posted-online/3840020.html"
+        },
+        {
+          "source_name": "disarm-incident-i00104",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks/blob/main/generated_pages/incidents/I00104.md"
+        }
+      ],
+      "confidence": 85
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--335238f2-9a6d-4c18-8492-d54a6e9b123a",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-04T00:00:00.000Z",
+      "name": "Sandworm GRU / Brexit EU Referendum concurrent activity sources",
+      "description": "Evidence sources for the Sandworm × Brexit relationship. DOJ indictment confirms GRU Unit 74455 (Sandworm) conducted the Ukraine power attacks; temporal overlap with Brexit-period Russian influence activity is documented in open sources. No unified campaign attribution has been published.",
+      "published": "2026-06-04T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--79eb1c2a-21c4-40e9-a059-8c2de5286f6a",
+        "relationship--216da87a-90a2-4863-894a-cda82823714e"
+      ],
+      "external_references": [
+        {
+          "source_name": "doj-2020",
+          "url": "https://www.justice.gov/opa/pr/six-russian-gru-officers-charged-connection-worldwide-deployment-destructive-malware-and"
+        },
+        {
+          "source_name": "eu-disinfo-lab-russian-operations",
+          "url": "https://www.disinfo.eu/publications/russian-disinformation-campaigns-and-the-eu/"
+        }
+      ],
+      "confidence": 40
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--1e86341a-aca1-464b-8865-93b292863d98",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-04T00:00:00.000Z",
+      "name": "Volt Typhoon KV Botnet / Taiwan Municipal Election 2022 sources",
+      "description": "Evidence sources for the Volt Typhoon × Taiwan Municipal Election 2022 relationship. CISA AA24-038A documents KV Botnet SOHO device compromise. DISARM Municipal Election documents China-origin influence activity concurrent with the election.",
+      "published": "2026-06-04T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--056ba8a4-8f3b-44a0-811c-bd3e94189a93",
+        "relationship--582c15c8-07f3-4493-904d-29f0425145f0"
+      ],
+      "external_references": [
+        {
+          "source_name": "cisa-aa24-038a",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a"
+        },
+        {
+          "source_name": "uscc-2023",
+          "url": "https://www.uscc.gov/sites/default/files/2023-03/Puma_Shen_Testimony.pdf"
+        }
+      ],
+      "confidence": 35
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--1f90d5be-86b4-42da-8f4d-25c5f902329b",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-04T00:00:00.000Z",
+      "name": "Volt Typhoon KV Botnet / Taiwan Presidential Election 2024 sources",
+      "description": "Evidence sources for the Volt Typhoon × Taiwan Presidential Election 2024 relationship. DOJ/FBI action documents KV Botnet disruption on 2024-01-31, overlapping with the election. CISA AA24-038A provides technical detail on network device compromise.",
+      "published": "2026-06-04T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--cce982e5-7fd1-4c8e-825e-c4c66135a5f8",
+        "relationship--4cdb543e-55f2-495d-bf35-c76043974bcd"
+      ],
+      "external_references": [
+        {
+          "source_name": "doj-fbi-2024",
+          "url": "https://www.justice.gov/opa/pr/us-government-disrupts-botnet-peoples-republic-china-used-conceal-hacking-critical"
+        },
+        {
+          "source_name": "cisa-aa24-038a",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a"
+        }
+      ],
+      "confidence": 35
+    },
+    {
+      "type": "note",
+      "spec_version": "2.1",
+      "id": "note--b90f34e7-37ce-51a8-8165-bd76c384a3f1",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-03T00:00:00.000Z",
+      "name": "Macron Leaks source-role separation note",
+      "abstract": "Source role separation for Macron Leaks",
+      "content": "Attribution context for Macron Leaks should be maintained separately from the leak-mechanics evidence in this minimal overlay. The relationships in this grouping are supported by leak-mechanics sources, not by attribution-only sources.",
+      "object_refs": [
+        "intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c",
+        "intrusion-set--b465114d-3bf8-4c42-8365-0d1fe771ff8e",
+        "relationship--629ba3b9-31e5-4706-aa8f-dca076cdf1f0",
+        "relationship--2fe537c5-0694-56b6-9fb4-99d9f51b01a4",
+        "relationship--81d345d1-d2b1-510a-928c-96fe37d65850",
+        "report--9f4586ed-d714-5648-8c77-39780c2f7594"
+      ],
+      "confidence": 80
+    },
+    {
+      "type": "note",
+      "spec_version": "2.1",
+      "id": "note--7db2a47a-e6e2-4735-b078-f4c790daae5b",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-04T00:00:00.000Z",
+      "name": "Sandworm × Brexit speculative disclaimer note",
+      "abstract": "Concurrent-only / speculative disclaimer for Sandworm × Brexit",
+      "content": "The x-force-multiplying relationship in this grouping reflects temporal concurrence and shared Russian state interest, not a documented causal link. The 2015 and 2016 Ukraine electric power campaigns (C0028, C0025) and the Brexit-related EU Referendum influence activity are treated as synchronized-disruption by the xop model, but no unified operation document has been released. This relationship should be treated as speculative (confidence 40) and re-evaluated if new OSINT emerges.",
+      "object_refs": [
+        "relationship--79eb1c2a-21c4-40e9-a059-8c2de5286f6a",
+        "report--335238f2-9a6d-4c18-8492-d54a6e9b123a",
+        "relationship--216da87a-90a2-4863-894a-cda82823714e"
+      ],
+      "confidence": 40
+    },
+    {
+      "type": "note",
+      "spec_version": "2.1",
+      "id": "note--a54db422-ba39-4a28-ae4b-3f162d76a071",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-04T00:00:00.000Z",
+      "name": "Volt Typhoon × Taiwan Municipal 2022 shared-infrastructure note",
+      "abstract": "Speculative / shared-infrastructure disclaimer for Volt Typhoon × Taiwan Municipal 2022",
+      "content": "CISA and FBI advisories confirm Volt Typhoon pre-positioned KV Botnet in critical infrastructure concurrent with the 2022 Taiwan Municipal Election. The DISARM Municipal Election intrusion-set documents China-origin influence activity targeting the same election. However, no document attributing the influence infrastructure to KV Botnet nodes has been publicly released. The x-shaping relationship is a plausible shared-infrastructure hypothesis (confidence 35).",
+      "object_refs": [
+        "relationship--056ba8a4-8f3b-44a0-811c-bd3e94189a93",
+        "report--1e86341a-aca1-464b-8865-93b292863d98",
+        "relationship--582c15c8-07f3-4493-904d-29f0425145f0"
+      ],
+      "confidence": 35
+    },
+    {
+      "type": "note",
+      "spec_version": "2.1",
+      "id": "note--a15da3eb-021d-488a-9b6e-46919696bb0d",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-04T00:00:00.000Z",
+      "name": "Volt Typhoon × Taiwan Presidential 2024 shared-infrastructure note",
+      "abstract": "Speculative / shared-infrastructure disclaimer for Volt Typhoon × Taiwan Presidential 2024",
+      "content": "The DOJ/FBI disruption action (2024-01-31) confirms KV Botnet was active through the 2024 Taiwan Presidential Election (2024-01-13). The DISARM Presidential Election intrusion-set documents China-origin influence activity including AI-generated deepfakes and bot amplification. The x-shaping relationship posits that KV Botnet nodes supplied anonymized forwarding capacity for influence bot networks; this is a plausible hypothesis (confidence 35) but has not been confirmed in any public attribution document.",
+      "object_refs": [
+        "relationship--cce982e5-7fd1-4c8e-825e-c4c66135a5f8",
+        "report--1f90d5be-86b4-42da-8f4d-25c5f902329b",
+        "relationship--4cdb543e-55f2-495d-bf35-c76043974bcd"
+      ],
+      "confidence": 35
+    },
+    {
+      "type": "grouping",
+      "spec_version": "2.1",
+      "id": "grouping--aa02b991-ef10-5fa9-a4e1-e9f484f65faf",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Ghostwriter / UNC1151 relationship operational context",
+      "context": "suspicious-activity",
+      "description": "Groups the external campaign reference, attack-pattern-to-attack-pattern relationships, and supporting report. The campaign and attack-pattern objects are defined outside this overlay.",
+      "object_refs": [
+        "intrusion-set--a602a6de-2739-42c4-a9ee-6bd00f1e716f",
+        "relationship--84f95f3f-fd1d-5c42-9ced-96a55234b6e1",
+        "relationship--cb6133e9-c0a8-550b-8626-75c1b92795d8",
+        "report--ed855c35-997e-5b30-aafa-af01b6ac50e0",
+        "relationship--4388290f-2f21-589e-bc6e-f776ea46cd39",
+        "relationship--8e5d542d-a91a-5623-be0e-8e9e38cb88e6",
+        "relationship--9431343f-c1cd-5c37-8297-dc944532757f",
+        "report--d50330b4-6f74-53d7-9109-4c9b7bcf90f4"
+      ]
+    },
+    {
+      "type": "grouping",
+      "spec_version": "2.1",
+      "id": "grouping--771d160e-ef06-5603-b048-6ec7664f8567",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Star Blizzard relationship operational context",
+      "context": "suspicious-activity",
+      "description": "Groups the external campaign reference, attack-pattern-to-attack-pattern relationships, and supporting report. The campaign and attack-pattern objects are defined outside this overlay.",
+      "object_refs": [
+        "intrusion-set--9b36c218-4d80-4ec6-a68d-cc2886bbe410",
+        "intrusion-set--8594567e-9375-4162-b46a-960d78503956",
+        "relationship--d8b033b7-d95f-5162-914d-50389b966550",
+        "relationship--3f629c10-b88d-50d6-a10b-2eaed6525ce2",
+        "report--2b69afa8-1981-5940-88f4-e3ee7ffdc514",
+        "relationship--d3daa822-ab78-4626-b03e-7078fefa2abd",
+        "relationship--d7996c60-f635-51a3-8cfb-ffb821eaa4e3",
+        "relationship--d8b76db5-1c5d-5e7d-9f1b-add7336e0e1b",
+        "relationship--5705cb3a-9b8c-5fe2-bca8-499adf014b18",
+        "report--35fab320-b924-594e-9255-01743ac78348"
+      ]
+    },
+    {
+      "type": "grouping",
+      "spec_version": "2.1",
+      "id": "grouping--a0fcc6c2-b400-5953-9b37-1540681541b6",
+      "created": "2026-06-03T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Macron Leaks relationship operational context",
+      "context": "suspicious-activity",
+      "description": "Groups the external campaign reference, attack-pattern-to-attack-pattern relationships, supporting report, and source-role note. The campaign and attack-pattern objects are defined outside this overlay.",
+      "object_refs": [
+        "intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c",
+        "intrusion-set--b465114d-3bf8-4c42-8365-0d1fe771ff8e",
+        "relationship--629ba3b9-31e5-4706-aa8f-dca076cdf1f0",
+        "relationship--2fe537c5-0694-56b6-9fb4-99d9f51b01a4",
+        "relationship--81d345d1-d2b1-510a-928c-96fe37d65850",
+        "report--9f4586ed-d714-5648-8c77-39780c2f7594",
+        "note--b90f34e7-37ce-51a8-8165-bd76c384a3f1",
+        "relationship--bb3d0143-7c00-5c08-a049-61a1e1d7c84b",
+        "relationship--0290adee-ea6f-543d-ad50-21378b11b889",
+        "relationship--6c2d18dd-82f8-598b-a653-4ac9aaa29360",
+        "relationship--36082e7e-5ac5-5d0d-88f0-8a9de186cb1a",
+        "relationship--47fc8b58-606c-5d97-ad38-b4c9809450e3",
+        "report--f0d8936c-1030-596c-ad65-ba771da46adf"
+      ]
+    },
+    {
+      "type": "grouping",
+      "spec_version": "2.1",
+      "id": "grouping--6ca6fbfa-e0d4-4ed1-8845-b18948ac49ef",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-04T00:00:00.000Z",
+      "name": "Sandworm GRU × Brexit relationship operational context",
+      "context": "suspicious-activity",
+      "description": "Groups the ATT&CK actor and campaign references, DISARM cognitive actor reference, x-force-multiplying relationship, supporting report, and speculative disclaimer. Coordination pattern: synchronized-disruption. Confidence is low (40); causal link not documented.",
+      "object_refs": [
+        "intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192",
+        "campaign--46421788-b6e1-4256-b351-f8beffd1afba",
+        "campaign--aa73efef-1418-4dbe-b43c-87a498e97234",
+        "intrusion-set--279af18e-c58e-49dd-a58e-613c92386271",
+        "relationship--79eb1c2a-21c4-40e9-a059-8c2de5286f6a",
+        "report--335238f2-9a6d-4c18-8492-d54a6e9b123a",
+        "note--7db2a47a-e6e2-4735-b078-f4c790daae5b",
+        "relationship--216da87a-90a2-4863-894a-cda82823714e"
+      ]
+    },
+    {
+      "type": "grouping",
+      "spec_version": "2.1",
+      "id": "grouping--0e8f65d3-3c72-4f3a-9b9f-a9935ae7e13a",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-04T00:00:00.000Z",
+      "name": "Volt Typhoon × Taiwan Municipal Election 2022 relationship operational context",
+      "context": "suspicious-activity",
+      "description": "Groups the ATT&CK actor and campaign references, DISARM cognitive actor reference, x-shaping relationships, supporting report, and speculative disclaimer. Coordination pattern: shared-infrastructure. Confidence is low (35); causal link not documented.",
+      "object_refs": [
+        "intrusion-set--174279b4-399f-4ddb-966e-5efedd1dd5f2",
+        "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+        "intrusion-set--eb3c505a-9dcb-4c8f-b522-0d5d8ece359a",
+        "relationship--056ba8a4-8f3b-44a0-811c-bd3e94189a93",
+        "report--1e86341a-aca1-464b-8865-93b292863d98",
+        "note--a54db422-ba39-4a28-ae4b-3f162d76a071",
+        "relationship--582c15c8-07f3-4493-904d-29f0425145f0"
+      ]
+    },
+    {
+      "type": "grouping",
+      "spec_version": "2.1",
+      "id": "grouping--72815764-d330-47e1-9809-5690185d596a",
+      "created": "2026-06-04T00:00:00.000Z",
+      "modified": "2026-06-04T00:00:00.000Z",
+      "name": "Volt Typhoon × Taiwan Presidential Election 2024 relationship operational context",
+      "context": "suspicious-activity",
+      "description": "Groups the ATT&CK actor and campaign references, DISARM cognitive actor reference, x-shaping relationships, supporting report, and speculative disclaimer. Coordination pattern: shared-infrastructure. Confidence is low (35); causal link not documented.",
+      "object_refs": [
+        "intrusion-set--174279b4-399f-4ddb-966e-5efedd1dd5f2",
+        "campaign--0c259854-4044-4f6c-ac49-118d484b3e3b",
+        "intrusion-set--bb3356db-663a-4026-b5f6-633132272ec9",
+        "relationship--cce982e5-7fd1-4c8e-825e-c4c66135a5f8",
+        "report--1f90d5be-86b4-42da-8f4d-25c5f902329b",
+        "note--a15da3eb-021d-488a-9b6e-46919696bb0d",
+        "relationship--4cdb543e-55f2-495d-bf35-c76043974bcd"
+      ]
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--d50330b4-6f74-53d7-9109-4c9b7bcf90f4",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Mandiant UNC1151-Belarus attribution (Nov 2021)",
+      "description": "Wahlstrom et al. (Mandiant Threat Intelligence), 'UNC1151 Assessed with High Confidence to have Links to Belarus, Ghostwriter Campaign Aligned with Belarusian Government Interests' (Nov 16, 2021). Documents the Belarus attribution, the credential-theft spoofed-domain inventory, and the takeover of Polish officials' social media.",
+      "published": "2021-11-16T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--4388290f-2f21-589e-bc6e-f776ea46cd39",
+        "relationship--8e5d542d-a91a-5623-be0e-8e9e38cb88e6",
+        "relationship--9431343f-c1cd-5c37-8297-dc944532757f"
+      ],
+      "external_references": [
+        {
+          "source_name": "mandiant_unc1151_nov2021",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc1151-linked-to-belarus-government/"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--35fab320-b924-594e-9255-01743ac78348",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "UK NCSC Star Blizzard advisory (Dec 2023)",
+      "description": "UK National Cyber Security Centre / FCDO joint advisory exposing Star Blizzard (FSB Centre 18) spear-phishing of UK political and parliamentary targets, with co-signatures from US, Australia, Canada and NZ.",
+      "published": "2023-12-07T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--d7996c60-f635-51a3-8cfb-ffb821eaa4e3",
+        "relationship--d8b76db5-1c5d-5e7d-9f1b-add7336e0e1b",
+        "relationship--5705cb3a-9b8c-5fe2-bca8-499adf014b18"
+      ],
+      "external_references": [
+        {
+          "source_name": "uk_ncsc_starblizzard_2023",
+          "url": "https://www.ncsc.gov.uk/news/uk-and-allies-expose-cyber-campaign-attempted-political-interference"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--f0d8936c-1030-596c-ad65-ba771da46adf",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Vilmer (2019), The Macron Leaks: A Post-Mortem",
+      "description": "Jeangène Vilmer, J.-B., 'The Macron Leaks Operation: A Post-Mortem' (Atlantic Council DFRLab / IRSEM, 2019). Most detailed single account, including the disinformation prelude, the tainted-leak technique, the Cyrillic-metadata false-flag breadcrumb, and the 4chan/Pastebin/alt-right amplification path.",
+      "published": "2019-06-01T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--bb3d0143-7c00-5c08-a049-61a1e1d7c84b",
+        "relationship--0290adee-ea6f-543d-ad50-21378b11b889",
+        "relationship--6c2d18dd-82f8-598b-a653-4ac9aaa29360",
+        "relationship--36082e7e-5ac5-5d0d-88f0-8a9de186cb1a",
+        "relationship--47fc8b58-606c-5d97-ad38-b4c9809450e3"
+      ],
+      "external_references": [
+        {
+          "source_name": "vilmer2019macron",
+          "url": "https://www.atlanticcouncil.org/in-depth-research-reports/report/the-macron-leaks-operation-a-post-mortem/"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--55f59163-e492-5217-bce8-b93d768029ca",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7",
+      "target_ref": "attack-pattern--b17a1a56-e99c-403c-8948-561df0cffe81",
+      "description": "Russia 2016 context: GRU Unit 26165 spear-phishing links (notably the bit.ly URL targeting John Podesta) harvest credentials (T1566.002) that subsequently serve as valid accounts (T1078) for DCCC/DNC network access.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a71eb646-8bd1-5b1f-876c-b6af93bf5eed",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--81abb4fa-705e-430f-ba54-34bf7bd467f7",
+      "target_ref": "attack-pattern--1c13465b-8b75-4b7d-a763-fe5b1d091635",
+      "description": "Russia 2016 context: IRA created ~3,841 Twitter, 470 Facebook, and 170 Instagram sockpuppet accounts (T0090.004) under fabricated American personas; this inventory is the operational precondition for troll-driven amplification (T0049.001).",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7aa168ef-fdf7-5911-8278-1e82d9e4a4c7",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--40597f16-0963-4249-bf4c-ac93b7fb9807",
+      "target_ref": "attack-pattern--8ea2fcce-e27e-4019-a773-70f3dddfab34",
+      "description": "Russia 2016 context: cyber exfiltration of tens of thousands of campaign emails (T1567) is the necessary material substrate for the leak-narrative content development (T0085) carried out via Guccifer 2.0 commentary, DCLeaks framing, and downstream media coverage.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a3e0a689-d404-559b-af6a-f0c4ad75b142",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-amplification",
+      "source_ref": "attack-pattern--e6ab2793-a059-4354-bb60-045afb019833",
+      "target_ref": "attack-pattern--09d17df9-9bb5-4d64-ba5c-8ae47814bd4c",
+      "description": "Russia 2016 context: IRA-controlled bot and cyborg accounts amplify diffusion of information pollution (T0019) beyond organic engagement; IRA-attributed Twitter accounts alone produced over 8.7 million tweets between 2013 and 2017.",
+      "x_role_category_ref": "x-role-category--3f7b2c45-d901-4a8e-9c6d-5e8b1f2a7d3c"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c2a18ef2-fe8d-5cfe-b087-61a942a40935",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-amplification",
+      "source_ref": "attack-pattern--0c765d19-99b2-4703-af48-e20a677c4bfc",
+      "target_ref": "attack-pattern--8c7832cb-8877-4f54-8e05-7e6df9a3d2b4",
+      "description": "Russia 2016 context: IRA social-media flood (T0049) cross-promoted WikiLeaks / DCLeaks / Guccifer 2.0 releases, scaling the political reach of the hack-and-leak material (T0089) beyond direct WikiLeaks readership.",
+      "x_role_category_ref": "x-role-category--3f7b2c45-d901-4a8e-9c6d-5e8b1f2a7d3c"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3b43e200-9b9c-55bf-b2f0-09647fcf2e2e",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-redirection",
+      "source_ref": "attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7",
+      "target_ref": "attack-pattern--09d17df9-9bb5-4d64-ba5c-8ae47814bd4c",
+      "description": "Russia 2016 context: GRU phishing (T1566.002) directly targeted IT credentials/inboxes of DNC/DCCC/Clinton-campaign staff; its effect propagated to the U.S. information environment (T0019) via the resulting leak materials and media coverage.",
+      "x_role_category_ref": "x-role-category--6e1a8b94-2c5f-4d3a-b7e8-9f0c4a2b6d5e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--42a84ea3-dcfa-55db-a551-7692b9e0ee18",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-redirection",
+      "source_ref": "attack-pattern--40597f16-0963-4249-bf4c-ac93b7fb9807",
+      "target_ref": "attack-pattern--8e913d43-971f-47f0-9b1a-a25dae195aad",
+      "description": "Russia 2016 context: exfiltration (T1567) directly targeted DNC/DCCC network and data stores; its effect propagated to U.S. public discourse via leak-driven coverage, deepening partisan polarisation (T0135.004) around the Clinton campaign.",
+      "x_role_category_ref": "x-role-category--6e1a8b94-2c5f-4d3a-b7e8-9f0c4a2b6d5e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ef7d8910-4bf5-5694-907f-039a2c63ed29",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-obfuscation",
+      "source_ref": "attack-pattern--dd415f9d-ce3a-44c6-9237-f8ceeb52a6a3",
+      "target_ref": "attack-pattern--ec8424e6-c7de-4543-b943-f0c4cc9ac63d",
+      "description": "Russia 2016 context: GRU operated the Guccifer 2.0 persona (claiming Romanian solo-hacker origin) and the DCLeaks platform (framed as a hacktivist site), misattributing the hack-and-leak (T0089.001) away from Russian state attribution.",
+      "x_role_category_ref": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0e5eca38-4a8b-5aab-a456-2e7810a7e3ab",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-obfuscation",
+      "source_ref": "attack-pattern--dd415f9d-ce3a-44c6-9237-f8ceeb52a6a3",
+      "target_ref": "attack-pattern--40597f16-0963-4249-bf4c-ac93b7fb9807",
+      "description": "Russia 2016 context: the same Guccifer 2.0 / DCLeaks misattribution narratives (T0129.010) reduce attribution of the underlying cyber exfiltration (T1567) to GRU Unit 26165 — the personas characterized the exfiltration publicly as the work of a lone Romanian hacker rather than a Russian state cyber unit. This relation is the ATT&CK-side projection of the cognitive-side δ T0129.010 → T0089.001.",
+      "x_role_category_ref": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--edce8fec-5051-5f25-bc4b-2168ecc383c5",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-obfuscation",
+      "source_ref": "attack-pattern--3ae4fb28-4864-468d-8085-cb8035cbb272",
+      "target_ref": "attack-pattern--1c13465b-8b75-4b7d-a763-fe5b1d091635",
+      "description": "Russia 2016 context: IRA accounts impersonated U.S. grassroots activists and identity-based groups ('Blacktivist', 'United Muslims of America', 'Heart of Texas'); this concealed Russian sponsorship from the audiences receiving troll-driven amplification (T0049.001).",
+      "x_role_category_ref": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--d0a15bb2-dc90-5096-af08-dc1c580ed351",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Mueller Report Vol I (DOJ, March 2019)",
+      "description": "Special Counsel Robert S. Mueller III, Report On The Investigation Into Russian Interference In The 2016 Presidential Election, Vol. I (U.S. Department of Justice, March 2019).",
+      "published": "2019-03-22T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--55f59163-e492-5217-bce8-b93d768029ca",
+        "relationship--a71eb646-8bd1-5b1f-876c-b6af93bf5eed",
+        "relationship--7aa168ef-fdf7-5911-8278-1e82d9e4a4c7",
+        "relationship--a3e0a689-d404-559b-af6a-f0c4ad75b142",
+        "relationship--c2a18ef2-fe8d-5cfe-b087-61a942a40935",
+        "relationship--3b43e200-9b9c-55bf-b2f0-09647fcf2e2e",
+        "relationship--42a84ea3-dcfa-55db-a551-7692b9e0ee18",
+        "relationship--ef7d8910-4bf5-5694-907f-039a2c63ed29",
+        "relationship--0e5eca38-4a8b-5aab-a456-2e7810a7e3ab",
+        "relationship--edce8fec-5051-5f25-bc4b-2168ecc383c5"
+      ],
+      "external_references": [
+        {
+          "source_name": "mueller2019report",
+          "url": "https://www.justice.gov/storage/report_volume1.pdf"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--72d2b720-4839-5df6-bbb1-37e9310efa0a",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "US v. Netyksho et al. (GRU indictment, DOJ Jul 2018)",
+      "description": "U.S. v. Viktor Borisovich Netyksho et al., Case No. 1:18-cr-00215-ABJ (D.D.C., July 13, 2018). Federal indictment of 12 GRU officers for the DNC/DCCC/Clinton-campaign hack-and-leak operation.",
+      "published": "2018-07-13T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--55f59163-e492-5217-bce8-b93d768029ca",
+        "relationship--7aa168ef-fdf7-5911-8278-1e82d9e4a4c7",
+        "relationship--ef7d8910-4bf5-5694-907f-039a2c63ed29",
+        "relationship--0e5eca38-4a8b-5aab-a456-2e7810a7e3ab"
+      ],
+      "external_references": [
+        {
+          "source_name": "ussv_netyksho2018",
+          "url": "https://www.justice.gov/archives/sco/file/1080281/dl"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--ce6f70b6-1518-5eed-b40f-d7947cdfa729",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "US v. Internet Research Agency (IRA indictment, DOJ Feb 2018)",
+      "description": "U.S. v. Internet Research Agency LLC et al., Case No. 1:18-cr-00032-DLF (D.D.C., Feb 16, 2018). Federal indictment of IRA and 13 individuals for the 2014-2017 social-media interference operation (Project Lakhta).",
+      "published": "2018-02-16T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--a71eb646-8bd1-5b1f-876c-b6af93bf5eed",
+        "relationship--edce8fec-5051-5f25-bc4b-2168ecc383c5"
+      ],
+      "external_references": [
+        {
+          "source_name": "ussv_ira2018",
+          "url": "https://www.justice.gov/file/1035477/download"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--7002b213-21e4-5f95-8baf-a3181151e195",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Senate SSCI Russian Active Measures Vol 5 (2020)",
+      "description": "U.S. Senate Select Committee on Intelligence, 'Russian Active Measures Campaigns and Interference in the 2016 U.S. Election, Volume 5' (2020).",
+      "published": "2020-08-18T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--a71eb646-8bd1-5b1f-876c-b6af93bf5eed",
+        "relationship--a3e0a689-d404-559b-af6a-f0c4ad75b142",
+        "relationship--c2a18ef2-fe8d-5cfe-b087-61a942a40935",
+        "relationship--42a84ea3-dcfa-55db-a551-7692b9e0ee18",
+        "relationship--edce8fec-5051-5f25-bc4b-2168ecc383c5"
+      ],
+      "external_references": [
+        {
+          "source_name": "ssci_vol5",
+          "url": "https://www.intelligence.senate.gov/sites/default/files/documents/report_volume5.pdf"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "grouping",
+      "spec_version": "2.1",
+      "id": "grouping--1a2a8d02-9fff-516f-ad41-c697cc20ee5b",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Russia 2016 US Election Interference (Project Lakhta + GRU) operational context",
+      "context": "suspicious-activity",
+      "description": "Integrated Russian operation against the 2016 U.S. presidential election. GRU Units 26165 and 74455 (APT28) conducted cyber intrusion against the DNC, DCCC, and Clinton-campaign staff; the Internet Research Agency (IRA) ran a parallel social-media interference operation; outputs were synchronised via WikiLeaks / DCLeaks / Guccifer 2.0 personas. Coordination pattern: integrated hack-and-leak + influence. Confidence 90.",
+      "object_refs": [
+        "intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c",
+        "intrusion-set--d8a2294a-e791-4b63-9a72-a614e89797d9",
+        "intrusion-set--2e4c7b24-b936-4042-8622-e3bd998bd156",
+        "relationship--55f59163-e492-5217-bce8-b93d768029ca",
+        "relationship--a71eb646-8bd1-5b1f-876c-b6af93bf5eed",
+        "relationship--7aa168ef-fdf7-5911-8278-1e82d9e4a4c7",
+        "relationship--a3e0a689-d404-559b-af6a-f0c4ad75b142",
+        "relationship--c2a18ef2-fe8d-5cfe-b087-61a942a40935",
+        "relationship--3b43e200-9b9c-55bf-b2f0-09647fcf2e2e",
+        "relationship--42a84ea3-dcfa-55db-a551-7692b9e0ee18",
+        "relationship--ef7d8910-4bf5-5694-907f-039a2c63ed29",
+        "relationship--0e5eca38-4a8b-5aab-a456-2e7810a7e3ab",
+        "relationship--edce8fec-5051-5f25-bc4b-2168ecc383c5",
+        "report--d0a15bb2-dc90-5096-af08-dc1c580ed351",
+        "report--72d2b720-4839-5df6-bbb1-37e9310efa0a",
+        "report--ce6f70b6-1518-5eed-b40f-d7947cdfa729",
+        "report--7002b213-21e4-5f95-8baf-a3181151e195"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7832921b-5975-52a7-8e31-2328e1456245",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--e0f07568-5a2b-429d-94b9-b1ff3c17adea",
+      "target_ref": "attack-pattern--09d17df9-9bb5-4d64-ba5c-8ae47814bd4c",
+      "description": "Doppelgänger context: cloned domains imitating 17+ legitimate media outlets (T0098.001) are the operational precondition for distributing fake articles appearing to come from those outlets (T0019).",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ab1a12d6-0317-595b-be3a-c76a9b2a7158",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--40f5caa0-4cb7-4117-89fc-d421bb493df3",
+      "target_ref": "attack-pattern--e0f07568-5a2b-429d-94b9-b1ff3c17adea",
+      "description": "Doppelgänger context: cyber-side domain acquisition with names deceptively similar to legitimate-media domains (T1583.001) is the technical precondition for establishing the inauthentic news-site asset (T0098.001).",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--730a9670-4f61-52a2-bd45-c7b028f7c440",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--6f020d80-d267-4e2a-8cd0-6d0dabe84f3a",
+      "target_ref": "attack-pattern--e6ab2793-a059-4354-bb60-045afb019833",
+      "description": "Doppelgänger context: bulk-created inauthentic accounts (T0090) — e.g., 100+ German-language accounts on Bluesky within days — are the precondition for the automated amplification pattern observed (T0049.003).",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f91f1b67-2567-5666-9eba-7bff7e41b8d5",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--60c4b628-4807-4b0b-bbf5-fdac8643c337",
+      "target_ref": "attack-pattern--e0f07568-5a2b-429d-94b9-b1ff3c17adea",
+      "description": "Doppelgänger context: server hosting acquired from bulletproof providers (T1583.004) — notably Aeza Group, designated under EU restrictive measures Dec 2024 — provides the underlying infrastructure on which the clone news sites (T0098.001) are deployed.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f1f427fd-bd6a-5a5b-a39d-cfac0d04c1a0",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-conditioning",
+      "source_ref": "attack-pattern--88d31120-5bc7-4ce3-a9c0-7cf147be8e54",
+      "target_ref": "attack-pattern--32ddaf21-ebef-4270-9416-d9ef74bd23f6",
+      "description": "Doppelgänger context: acquired web-services infrastructure such as URL shorteners and custom redirectors (T1583.006) is the technical precondition for the multi-hop URL-redirect chain (T0129.008) used to deliver readers from social-media posts to clone-site articles while evading content moderation.",
+      "x_role_category_ref": "x-role-category--9a3d8e21-7b04-4f6c-b2e3-1d5c8f9a3e21"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--255329de-e404-5b9a-937d-a232758f7001",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-amplification",
+      "source_ref": "attack-pattern--c254c765-c83d-4ae3-880e-7a253ef02d37",
+      "target_ref": "attack-pattern--09d17df9-9bb5-4d64-ba5c-8ae47814bd4c",
+      "description": "Doppelgänger context: narratives tailored to existing polarising debates (migration, inflation, Ukraine support) (T0083) increase the resonance and downstream effect of the information pollution (T0019) relative to identical content without such tailoring.",
+      "x_role_category_ref": "x-role-category--3f7b2c45-d901-4a8e-9c6d-5e8b1f2a7d3c"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3e4a5563-b8c4-5344-94a3-da3f1d86b755",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-amplification",
+      "source_ref": "attack-pattern--e6ab2793-a059-4354-bb60-045afb019833",
+      "target_ref": "attack-pattern--8ea2fcce-e27e-4019-a773-70f3dddfab34",
+      "description": "Doppelgänger context: bot-driven automated forwarding (T0049.003) — 4,900+ posts on Bluesky in seven days; prior X/Facebook waves — amplifies the reach of the underlying fake-article URLs (T0085) beyond organic sharing.",
+      "x_role_category_ref": "x-role-category--3f7b2c45-d901-4a8e-9c6d-5e8b1f2a7d3c"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--19fe1c5a-0302-5097-a254-936118561abd",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-redirection",
+      "source_ref": "attack-pattern--3ae4fb28-4864-468d-8085-cb8035cbb272",
+      "target_ref": "attack-pattern--8e913d43-971f-47f0-9b1a-a25dae195aad",
+      "description": "Doppelgänger context: brand impersonation (T0099) directly targets individual readers who mistake clone sites for trusted media; its effect propagates to polarisation of European publics on Ukraine support and migration (T0135.004) — a discourse-level effect downstream of reader-level deception.",
+      "x_role_category_ref": "x-role-category--6e1a8b94-2c5f-4d3a-b7e8-9f0c4a2b6d5e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f8f46ace-7b8c-599f-b037-5fa3de85833e",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-obfuscation",
+      "source_ref": "attack-pattern--89b88c22-0686-4d28-9c2b-e0c6ac31a4ab",
+      "target_ref": "attack-pattern--8ea2fcce-e27e-4019-a773-70f3dddfab34",
+      "description": "Doppelgänger context: obfuscated URL chains (T0121.001) hide the final destination from X's automated content moderation systems, concealing the article-promotion activity (T0085) from platform-level detection.",
+      "x_role_category_ref": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7d57a3c1-6030-5e24-be99-689b87f9e4ec",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-obfuscation",
+      "source_ref": "attack-pattern--eb67513e-b6e8-42e1-a95b-197f64c21588",
+      "target_ref": "attack-pattern--6f020d80-d267-4e2a-8cd0-6d0dabe84f3a",
+      "description": "Doppelgänger context: operators registered the operating Twitter/X accounts (T0090) in jurisdictions other than Russia (T0129.001) to conceal Russian origin of the inauthentic-account network.",
+      "x_role_category_ref": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--af86a3ec-cbc1-566b-8160-f464eb6975f9",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-obfuscation",
+      "source_ref": "attack-pattern--331a83bb-2e5b-4c49-9446-e78a8f25b4eb",
+      "target_ref": "attack-pattern--e0f07568-5a2b-429d-94b9-b1ff3c17adea",
+      "description": "Doppelgänger context: bulletproof hosting providers (notably Aeza Group, sanctioned under EU restrictive measures Dec 2024) (T0130.002) hide the identity of entities behind the clone news sites (T0098.001), providing infrastructure-level deniability.",
+      "x_role_category_ref": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2d618d57-86bd-5065-bf8b-774c4a7bea6b",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "relationship_type": "x-obfuscation",
+      "source_ref": "attack-pattern--a09fbbeb-58ef-4e7a-8183-5eaa668200c9",
+      "target_ref": "attack-pattern--32ddaf21-ebef-4270-9416-d9ef74bd23f6",
+      "description": "Doppelgänger context: operators deactivate parts of the URL-redirect chain (T0129.008) after detection (T0129.004), eliminating forensic breadcrumbs that would otherwise allow tracing the redirect network back to the operators.",
+      "x_role_category_ref": "x-role-category--c8d4f7e2-3a91-4b6d-8e5c-7f1a2b9d4c8e"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--c616aca7-ae4e-5d69-b222-0868b93555bd",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "EEAS Doppelgänger technical report (June 2024)",
+      "description": "European External Action Service (EEAS) StratCom, 'Doppelganger strikes back: FIMI activities in the context of the EE24' (June 2024). Technical report on detected FIMI during the EP elections.",
+      "published": "2024-06-01T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--7832921b-5975-52a7-8e31-2328e1456245",
+        "relationship--19fe1c5a-0302-5097-a254-936118561abd"
+      ],
+      "external_references": [
+        {
+          "source_name": "eeas2024_doppelganger",
+          "url": "https://euvsdisinfo.eu/uploads/2024/06/EEAS-TechnicalReport-DoppelgangerEE24_June2024.pdf"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--145ebfe5-d950-5727-a9ec-51d2a13554ec",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Alliance4Europe 'Fool Me Once' Doppelgänger CDN report (Sep 2024)",
+      "description": "Alliance4Europe, 'Fool Me Once: Russian Influence Operation Doppelgänger Continues on X and Facebook' (September 2024). Provides explicit DISARM TTP mapping of observed Doppelgänger behaviour (T0083, T0090, T0098.001, T0121.001, T0129.001, T0129.004, T0129.008, T0130.002, T0135.004).",
+      "published": "2024-09-01T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--7832921b-5975-52a7-8e31-2328e1456245",
+        "relationship--ab1a12d6-0317-595b-be3a-c76a9b2a7158",
+        "relationship--730a9670-4f61-52a2-bd45-c7b028f7c440",
+        "relationship--f91f1b67-2567-5666-9eba-7bff7e41b8d5",
+        "relationship--f1f427fd-bd6a-5a5b-a39d-cfac0d04c1a0",
+        "relationship--255329de-e404-5b9a-937d-a232758f7001",
+        "relationship--3e4a5563-b8c4-5344-94a3-da3f1d86b755",
+        "relationship--19fe1c5a-0302-5097-a254-936118561abd",
+        "relationship--f8f46ace-7b8c-599f-b037-5fa3de85833e",
+        "relationship--7d57a3c1-6030-5e24-be99-689b87f9e4ec",
+        "relationship--af86a3ec-cbc1-566b-8160-f464eb6975f9",
+        "relationship--2d618d57-86bd-5065-bf8b-774c4a7bea6b"
+      ],
+      "external_references": [
+        {
+          "source_name": "alliance4europe_foolme_2024",
+          "url": "https://alliance4europe.eu/wp-content/uploads/2024/09/CDN-Report-%E2%80%93-Fool-Me-Once_-Russian-Influence-Operation-Doppelganger-Continues-on-X-and-Facebook-%E2%80%93-September-2024.pdf"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--98713d80-dea6-5443-9563-dfdcc0bed14d",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "EU Council restrictive measures, Doppelgänger (Dec 2024)",
+      "description": "Council of the European Union: restrictive measures imposed on individuals and entities behind the Doppelgänger campaign, including Social Design Agency, Struktura, and infrastructure providers (Dec 16, 2024).",
+      "published": "2024-12-16T00:00:00.000Z",
+      "report_types": [
+        "campaign"
+      ],
+      "object_refs": [
+        "relationship--ab1a12d6-0317-595b-be3a-c76a9b2a7158",
+        "relationship--f91f1b67-2567-5666-9eba-7bff7e41b8d5",
+        "relationship--af86a3ec-cbc1-566b-8160-f464eb6975f9"
+      ],
+      "external_references": [
+        {
+          "source_name": "eu2024sanctions_doppelganger",
+          "url": "https://www.eeas.europa.eu/eeas/exposing-continued-russian-attempts-manipulate-information-environment_en"
+        }
+      ],
+      "confidence": 90
+    },
+    {
+      "type": "grouping",
+      "spec_version": "2.1",
+      "id": "grouping--0ba4080c-0c95-5679-b41a-6c2c7fae2311",
+      "created": "2026-06-23T00:00:00.000Z",
+      "modified": "2026-06-23T00:00:00.000Z",
+      "name": "Doppelgänger / RRN information operation operational context",
+      "context": "suspicious-activity",
+      "description": "Russian influence operation run primarily by the Social Design Agency (SDA) and Struktura: clones legitimate Western media outlets (Bild, Le Parisien, 20 Minutes, ANSA, The Guardian, RBC Ukraine, etc.), publishes fabricated articles on the cloned domains, and promotes those URLs via bulk-created accounts on X, Facebook, and Bluesky. Active since at least May 2022; EU sanctions imposed Dec 2024. Coordination pattern: media-clone + bulk-account amplification. Confidence 90.",
+      "object_refs": [
+        "intrusion-set--1b71a346-3c36-40f3-b192-9b9df220e7b3",
+        "relationship--7832921b-5975-52a7-8e31-2328e1456245",
+        "relationship--ab1a12d6-0317-595b-be3a-c76a9b2a7158",
+        "relationship--730a9670-4f61-52a2-bd45-c7b028f7c440",
+        "relationship--f91f1b67-2567-5666-9eba-7bff7e41b8d5",
+        "relationship--f1f427fd-bd6a-5a5b-a39d-cfac0d04c1a0",
+        "relationship--255329de-e404-5b9a-937d-a232758f7001",
+        "relationship--3e4a5563-b8c4-5344-94a3-da3f1d86b755",
+        "relationship--19fe1c5a-0302-5097-a254-936118561abd",
+        "relationship--f8f46ace-7b8c-599f-b037-5fa3de85833e",
+        "relationship--7d57a3c1-6030-5e24-be99-689b87f9e4ec",
+        "relationship--af86a3ec-cbc1-566b-8160-f464eb6975f9",
+        "relationship--2d618d57-86bd-5065-bf8b-774c4a7bea6b",
+        "report--c616aca7-ae4e-5d69-b222-0868b93555bd",
+        "report--145ebfe5-d950-5727-a9ec-51d2a13554ec",
+        "report--98713d80-dea6-5443-9563-dfdcc0bed14d"
+      ]
+    }
+  ]
+}
