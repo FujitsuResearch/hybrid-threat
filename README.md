@@ -14,7 +14,7 @@ small set of *role-category* objects and *relationship* objects that connect
 ## Contents
 
 ```
-public/
+hybrid-threat/
 ├── README.md                     ← this file
 ├── LICENSE                       ← CC BY-SA 4.0 (applies to the original contribution)
 ├── THIRD_PARTY_LICENSES/
