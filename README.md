@@ -30,9 +30,10 @@ hybrid-threat/
 ### `data/attack.bundle.json`
 
 A STIX 2.1 bundle of **MITRE ATT&CK (Enterprise) v18.1** (released 2025-11-13),
+redistributed unmodified as the node source for cyber techniques.
 
-> **How to obtain / reproduce.** This file is large (~49 MB).
-> It is a verbatim copy of the official ATT&CK STIX data
+> **How to obtain / reproduce.** This file is included here for convenience, but
+> it is large (~49 MB). It is a verbatim copy of the official ATT&CK STIX data
 > and can be re-downloaded from the MITRE ATT&CK repository instead:
 >
 > - `https://github.com/mitre-attack/attack-stix-data/blob/master/enterprise-attack/enterprise-attack-18.1.json`
